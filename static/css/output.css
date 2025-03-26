@@ -180,6 +180,9 @@
   }
 }
 @layer utilities {
+  .static {
+    position: static;
+  }
   .m-auto {
     margin: auto;
   }
