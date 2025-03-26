@@ -25,7 +25,7 @@ def login():
             login_user(user)
             return render_template('dashboard.html', user=user)
         
-        return "Credenciales incorrectas"
+        return render_template('bad-credentials.html')
 
     return render_template('login.html')
 
