@@ -12,8 +12,11 @@
             <div class="w-full flex flex-col items-center bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                 <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                     <h1 class="text-xl text-center leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                        Bienvenido, <b class="text-blue-500">{{ user.username }}</b>!
+                        Bienvenido, <b class="text-blue-500 uppercase">{{ user.username }}</b>!
                     </h1>
+                </div>
+                <div class="img-background">
+                    <img src="../static/img/utl-logo.png" class="w-20 h-25 mb-8">
                 </div>
                 <div class="text-center mb-8 border-2 rounded border-red-500 w-30 cursor-pointer">
                     <a class="font-bold text-red-500" href="{{ url_for('logout') }}">Cerrar sesión</a>
